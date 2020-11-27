@@ -16,6 +16,9 @@ mongoose.connect(
     process.execArgv.MONGODB_URI || "mongodb://localhost/workoutTracker",
     {
         useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false,
     }
 );
 
